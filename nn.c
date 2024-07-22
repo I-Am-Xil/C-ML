@@ -50,8 +50,8 @@ int main(void){
     for (size_t i = 0; i < 2; i++) {
         for (size_t j = 0; j < 2; j++) {
 
-            MAT_AT(nn.as[0], 0, 0) = i;
-            MAT_AT(nn.as[0], 0, 1) = j;
+            MAT_AT(NN_INPUT(nn), 0, 0) = i;
+            MAT_AT(NN_INPUT(nn), 0, 1) = j;
 
             nn_forward(nn);
 
